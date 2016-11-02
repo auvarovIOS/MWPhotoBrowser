@@ -24,6 +24,10 @@
 
 - (NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser;
 - (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index;
+- (void) galleryButtonDidTaped;
+- (void) cameraButtonDidTaped;
+- (void) deleteButtonDidTaped:(NSUInteger)index;
+- (void) favoriteButtonDidTaped:(NSUInteger)index;
 
 @optional
 
@@ -52,6 +56,9 @@
 @property (nonatomic) BOOL autoPlayOnAppear;
 @property (nonatomic) NSUInteger delayToHideElements;
 @property (nonatomic, readonly) NSUInteger currentIndex;
+@property (nonatomic, strong) NSNumber* likedPhoto;
+
+@property (nonatomic, weak) UIImage * starImage;
 
 // Customise image selection icons as they are the only icons with a colour tint
 // Icon should be located in the app's main bundle
