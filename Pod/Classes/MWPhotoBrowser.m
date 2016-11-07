@@ -264,15 +264,7 @@ static void * MWVideoPlayerObservation = &MWVideoPlayerObservation;
     
     UIBarButtonItem * space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
     
-    [items addObject:fixedSpace];
-    
-//    UIView * galleryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"gallery_icon"]];
-//    galleryView.frame = CGRectMake(0, 0, 22, 30);
-//    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(galleryButtonAction)];
-//    [galleryView addGestureRecognizer:tap];
-//    UIBarButtonItem * gallery = [[UIBarButtonItem alloc] initWithCustomView:galleryView];
-//    [items addObject:gallery];
-    
+    [items addObject:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(actionButtonPressed:)]];
     [items addObject:space];
     
     UIView * cameraView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo_icon"]];
