@@ -264,7 +264,7 @@ static void * MWVideoPlayerObservation = &MWVideoPlayerObservation;
     
     UIBarButtonItem * space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
     
-    [items addObject:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(actionButtonPressed:)]];
+    [items addObject:[[UIBarButtonItem alloc] init]];
     [items addObject:space];
     
     UIView * cameraView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo_icon"]];
