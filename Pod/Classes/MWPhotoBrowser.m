@@ -268,7 +268,7 @@ static void * MWVideoPlayerObservation = &MWVideoPlayerObservation;
     [items addObject:space];
     
     UIView * cameraView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo_icon"]];
-    cameraView.frame = CGRectMake(0, 0, 34, 26);
+    cameraView.frame = CGRectMake(0, 0, 39, 30);
     UITapGestureRecognizer * cameraViewtap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cameraButtonAction)];
     [cameraView addGestureRecognizer:cameraViewtap];
     UIBarButtonItem * cameraViewgallery = [[UIBarButtonItem alloc] initWithCustomView:cameraView];
